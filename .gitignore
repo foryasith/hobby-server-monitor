@@ -1,1 +1,35 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+secrets/
 
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local application data
+data/
+backend/data/
+*.db
+*.sqlite
+*.sqlite3
+*.tinyflux
+
+# Node and Astro
+node_modules/
+dist/
+.astro/
+
+# Logs
+*.log
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
