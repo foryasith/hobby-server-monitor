@@ -1,0 +1,1 @@
+"""HTTP resource handlers for the Hobby Server Monitor API."""
