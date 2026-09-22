@@ -3,6 +3,7 @@
 import falcon
 
 from hobby_server_monitor.resources.health import HealthResource
+from hobby_server_monitor.resources.system import SystemResource
 
 
 def create_app() -> falcon.App:
@@ -10,8 +11,8 @@ def create_app() -> falcon.App:
 
     application = falcon.App()
 
-    health_resource = HealthResource()
-    application.add_route("/api/health", health_resource)
+    application.add_route("/api/health", HealthResource())
+    application.add_route("/api/system", SystemResource())
 
     return application
 
